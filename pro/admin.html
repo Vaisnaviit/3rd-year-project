@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Admin Panel</h1>
+
+        <!-- Menu Management -->
+        <section>
+            <h2>Manage Menu</h2>
+            <form id="add-menu-item-form">
+                <input type="text" id="menu-name" placeholder="Menu Item Name" required>
+                <select id="menu-category" required>
+                    <option value="Indian">Indian</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Drinks">Drinks</option>
+                </select>
+                <input type="number" id="menu-price" placeholder="Price" required>
+                <input type="text" id="menu-image" placeholder="Image URL" required>
+                <button type="submit">Add Item</button>
+            </form>
+            <table id="menu-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Image</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <!-- Orders -->
+        <section>
+            <h2>View Orders</h2>
+            <table id="orders-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>User Name</th>
+                        <th>Email</th>
+                        <th>Ordered Food</th>
+                        <th>Payment</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

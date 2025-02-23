@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="menu.js" defer></script>
+</head>
+<body>
+    <header>
+        FOODY MOOD
+    </header>
+    
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for food..." oninput="searchMenu()">
+        <button onclick="startVoiceSearch()">🎙️</button>
+    </div>
+
+    <main class="menu">
+        <h2 style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; margin: auto;">MENU SECTION</h2>
+
+        <!-- Indian Menu Section -->
+        <section class="menu-section">
+            <h3 >INDIAN CUISINE</h3>
+            <div id="indian-menu" class="menu-items"></div>
+        </section>
+
+        <!-- Chinese Menu Section -->
+        <section class="menu-section">
+            <h3>CHINESE CUISINE</h3>
+            <div id="chinese-menu" class="menu-items"></div>
+        </section>
+
+        <!-- Drinks Menu Section -->
+        <section class="menu-section">
+            <h3>DRINKS</h3>
+            <div id="drinks-menu" class="menu-items"></div>
+        </section>
+
+        <!-- Billing Section -->
+        <div id="billing" class="billing">
+            Total: ₹0
+        </div>
+
+        <!-- Checkout Button -->
+        <div class="payment">
+            <button onclick="handleCheckout()">Checkout</button>
+        </div>
+
+        <!-- Back Button -->
+        <div class="back-link">
+            <a href="home.html">Back to Home</a>
+        </div>
+        
+    </main>
+
+</body>
+</html>

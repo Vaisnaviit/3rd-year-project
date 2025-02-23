@@ -1,0 +1,122 @@
+/* Basic Reset */
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Blurred Background */
+.bg-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/signup.jpeg') no-repeat center center/cover;
+  filter: blur(15px);
+  z-index: -1;
+}
+
+/* Left Side Image (Clear) */
+.left-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 40%;
+  background: url('images/signup.jpeg') no-repeat center center/cover;
+  z-index: 1;
+}
+
+/* Signup Form Box */
+.form-container {
+  background: rgba(255, 255, 255, 0.758);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(127, 118, 118, 0.3);
+  width: 380px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(54, 49, 49, 0.861);
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading */
+h2 {
+  color:black;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  background: rgba(20, 19, 19, 0.3);
+  color: #070505;
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: rgba(14, 10, 10, 0.283);
+}
+
+input:focus {
+  background: rgba(14, 14, 14, 0.5);
+}
+
+/* Signup Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Text and Links */
+p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #000000;
+}
+
+a {
+  color: #ff416c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

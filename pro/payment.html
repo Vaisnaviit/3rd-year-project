@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Options</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <div class="payment-container">
+    <h2>Choose Your Payment Method</h2>
+    <div class="payment-options">
+      <button class="btn" id="cash-payment">Counter Cash</button>
+      <button class="btn" id="upi-payment">UPI Method</button>
+    </div>
+    <div id="upi-section" class="hidden">
+      <p>Scan the QR Code to pay via UPI:</p>
+      <img src="images\qr.png" alt="UPI QR Code" class="qr-code">
+    </div>
+    <div id="confirmation" class="hidden">
+      <p>Thank you for your payment!</p>
+    </div>
+  </div>
+  <script src="payment.js"></script>
+</body>
+</html>

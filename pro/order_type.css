@@ -1,0 +1,77 @@
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar button {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #ffa500;
+}
+
+/* Order Container */
+.order-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.order-container h1 {
+    font-family: "Georgia", serif;
+    color: black;
+}
+
+.options {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.options button {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.table-grid {
+    display: none;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.table-grid button {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.table-grid button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
